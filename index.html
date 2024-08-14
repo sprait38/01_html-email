@@ -1,0 +1,563 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+    }
+
+    [style*="Arial"] {
+      font-family: 'Arial', Open Sans, sans-serif !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 30px 206.2px;
+      background: #000000;
+    }
+
+    .heder {
+      margin: 0;
+    }
+
+    .fact {
+      margin: 0;
+      padding-left: 40px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .fact-1 {
+      margin: 0;
+      padding-top: 35px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #515151;
+
+    }
+
+    .fact-2 {
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    .fact-3 {
+      margin: 0;
+      padding-top: 20px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    .img-3 {
+      padding-top: 12px;
+    }
+
+    .pt-20 {
+      margin: 0;
+    }
+
+    .td-2 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .td-3 {
+      padding-right: 31px;
+    }
+
+    .td-4 {
+      width: 138px;
+      padding-right: 46px;
+    }
+
+    .td-5 {
+      padding-top: 1px;
+    }
+
+    .description {
+      margin: 0;
+      padding-left: 40px;
+      padding-top: 11px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .description-2 {
+      margin: 0;
+      padding-bottom: 22px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+
+    .description-3 {
+      margin: 0;
+      padding-left: 0px;
+      padding-top: 7px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #515151;
+    }
+
+    .padding-32 {
+      height: 307px;
+    }
+
+    .table-20 {
+      margin: 0;
+    }
+
+    .btn {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 17px 35px;
+      width: 240px;
+      height: 45px;
+      background: #9D5CD0;
+      border-radius: 48px;
+      border: 0;
+    }
+
+    .btn-text {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 0%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .social {
+      padding-top: 27px;
+      padding-bottom: 4px;
+    }
+
+    .fut {
+      margin: 0;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .futer-tb {
+      height: 21px;
+      background: #EBEBEB;
+    }
+
+    .futer {
+      margin: 0;
+      padding-top: 7px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .futer-link {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 24px;
+      color: #9D5CD0;
+    }
+
+    .mob {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .table-600 {
+        width: 280px !important;
+        margin: 0;
+      }
+
+      .table-520 {
+        width: 280px !important;
+      }
+
+      .table-490 {
+        width: 280px !important;
+      }
+
+      .logo {
+        padding: 17.24px 83px;
+      }
+
+      .mob-heder {
+        width: 280px !important;
+      }
+
+      .heder-img {
+        height: 300px;
+      }
+
+      .description {
+        padding-left: 18px;
+        padding-top: 13px;
+      }
+
+      .description-2 {
+        padding-left: 18px;
+      }
+
+      .description-3 {
+        padding-top: 11px;
+      }
+
+      .mob-text {
+        padding-top: 8px;
+      }
+
+      .fact {
+        padding-top: 32px;
+        padding-left: 18px;
+      }
+
+      .fact-1 {
+        padding-top: 36px;
+        padding-left: 32px
+      }
+
+      .fact-2 {
+        padding-left: 18px;
+        padding-top: 51px;
+      }
+
+      .fact-3 {
+        padding-top: 10px;
+        padding-left: 18px;
+      }
+
+      .osn {
+        display: none;
+      }
+
+      .mob {
+        display: block;
+      }
+
+      .padding-32 {
+        height: 568px;
+      }
+
+      .img {
+        padding-left: 18px;
+        width: 244px;
+        height: 84px;
+      }
+
+      .img2 {
+        padding-left: 18px;
+        width: 244px;
+        height: 85px;
+      }
+
+      .td-3 {
+        padding-top: 10px;
+        padding-left: 32px;
+        width: 244px;
+        display: inline-block;
+      }
+
+      .td-4 {
+        padding-top: 24px;
+        padding-left: 31px;
+        padding-right: 0;
+        width: 244px;
+        display: inline-block;
+      }
+
+      .td-5 {
+        padding-top: 12px;
+        padding-left: 31px;
+        width: 244px;
+        display: inline-block;
+      }
+
+      .td-2 {
+        width: 280px !important;
+      }
+
+      .btn {
+        margin-top: 47px;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+  <div style="font-size:0px; font-color:#ffffff; opacity:0; visibility:hidden; width:0; height:0; display:none;">
+    Тестовое письмо
+  </div>
+  <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#ffffff" align="center">
+    <tr bgcolor="#000000">
+      <td>
+        <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#ffffff" align="center">
+          <tr>
+            <td class="logo mob-log" align="center">
+              <img src="https://ie.wampi.ru/2022/12/26/LOGO.png" alt="Логотип" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" class="padding-32">
+        <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#ffffff" align="center">
+          <tr>
+            <td class="heder mob-heder" align="center">
+              <img class="heder-img" src="https://im.wampi.ru/2022/12/26/Rectangle-6.jpg" alt="Изображение" />
+            </td>
+          </tr>
+          <tr>
+            <td align="left">
+              <h2 class="fact" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                Торжество импрессионизма
+              </h2>
+              <p class="description" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                Опыт говорит нам, что семантический<br class="mob" /> разбор внешних противодействий требует анализа
+                <br class="osn" /> новых принципов формирования материально-технической и кадровой<br class="mob" />
+                базы.
+              </p>
+              <p class="description" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                Задача организации, в особенности же внедрение современных методик, в своём
+                <br class="osn" /> классическом представлении, допускает внедрение глубокомысленных<br class="mob" />
+                рассуждений.
+                Есть <br class="osn" /> над чем задуматься: элементы политического процесса<br class="mob" /> преданы
+                <br class="osn" /> социально-демократической анафеме! Но интерактивные прототипы заблокированы в
+                <br class="osn" />рамках своих<br class="mob" /> собственных рациональных ограничений. Сторонники
+                тоталитаризма
+                в науке ограничены исключительно образом мышления.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" class="pt-20">
+        <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#000000" align="center">
+          <tr>
+            <td align="left" class="td-0">
+              <table cellpadding="0" cellspacing="0" class="table-520" width="520" bgcolor="#000000" align="center">
+                <tr>
+                  <td>
+                    <h2 class="fact-2" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                      Представленные художники
+                    </h2>
+                    <img class="img" src="https://ie.wampi.ru/2022/12/26/Rectangle-166.png" alt="Изображение" />
+                    <h3 class="fact-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">Поль Гоген</h3>
+                    <p class="description-2" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                      Прежде всего, разбавленное изрядной<br class="mob" /> долей эмпатии, рациональное мышление в
+                      <br class="osn" />значительной степени обусловливает важность укрепления моральных<br
+                        class="mob" /> ценностей.
+                    </p>
+                    <img class="img2" src="https://ic.wampi.ru/2022/12/26/Rectangle-167.png" alt="Изображение" />
+                    <h3 class="fact-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">Огюст Ренуар
+                    </h3>
+                    <p class="description-2" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                      А также сделанные на базе<br class="mob" /> интернет-аналитики выводы освещают чрезвычайно
+                      <br class="osn" /> интересные особенности картины в целом.
+                    </p>
+                    <img class="img2" src="https://im.wampi.ru/2022/12/26/Rectangle-168.png" alt="Изображение" />
+                    <h3 class="fact-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">Клод Моне</h3>
+                    <p class="description-2" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                      Современная методология разработки однозначно фиксирует необходимость системы
+                      <br class="osn" /> массового участия.
+                    </p>
+                    <img class="img2" src="https://ie.wampi.ru/2022/12/26/Rectangle-169.png" alt="Изображение" />
+                    <h3 class="fact-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">Эдуард Мане</h3>
+                    <p class="description-2 mob-text" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                      Но социально-экономическое развитие является качественно новой ступенью<br class="mob" /> вывода
+                      <br class="osn" /> текущих активов.
+                    </p>
+                    <img class="img2" src="https://ic.wampi.ru/2022/12/26/Rectangle-170.jpg" alt="Изображение" />
+                    <h3 class="fact-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">Винсент Ван Гог
+                    </h3>
+                    <p class="description-2 mob-text" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                      Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
+                      <br class="osn" /> рациональное мышление требует анализа поставленных обществом задач.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="table-20">
+        <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#ffffff" align="center">
+          <tr>
+            <td align="left" class="td-2">
+              <table cellpadding="0" cellspacing="0" class="table-520" width="520" bgcolor="#ffffff" align="left">
+                <tr>
+                  <td align="left" class="pt-20">
+                    <p class="fact-1" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">И это ещё не всё!
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" class="table-490" width="490" bgcolor="#ffffff" align="left">
+                      <tr>
+                        <td align="left" class="td-3 mob-log">
+                          <img class="img-2" src="https://im.wampi.ru/2022/12/26/check-square.png" alt="Изображение" />
+                          <p class="description-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                            Уникальные подборки<br class="osn" /> работ с авторскими <br class="osn" /> рецензиями
+                          </p>
+                        </td>
+                        <td align="left" class="td-4 mob-log">
+                          <img class="img-2" src="https://ie.wampi.ru/2022/12/26/calendar.png" alt="Изображение" />
+                          <p class="description-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                            Возможность настроить<br class="osn" /> нашу рассылку под свой <br class="osn" /> личный
+                            вкус
+                          </p>
+                        </td>
+                        <td align="left" class="td-5 mob-log">
+                          <img class="img-3" src="https://ic.wampi.ru/2022/12/26/arrow-up-circle.png"
+                            alt="Изображение" />
+                          <p class="description-3" style="font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;">
+                            У вас есть пожелания и <br class="osn" /> предложения? <br class="osn" /> Напишите нам в
+                            ответ
+                            <br class="osn" /> на это письмо!
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <button class="btn btn-text">Узнать все подробности</button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="600" class="table-600" cellpadding="0" cellspacing="0" bgcolor="#000000" align="center">
+                <tr>
+                  <td align="center">
+                    <table width="250" class="table-250" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td align="center" class="social">
+                          <table width="150" class="table-150" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td align="center">
+                                <a href="#">
+                                  <img src="https://im.wampi.ru/2022/12/26/vk.png" alt="Изображение" />
+                                </a>
+                              </td>
+                              <td align="center">
+                                <a href="#">
+                                  <img src="https://ie.wampi.ru/2022/12/26/instagram.png" alt="Изображение" />
+                                </a>
+                              </td>
+                              <td align="center">
+                                <a href="#">
+                                  <img src="https://ic.wampi.ru/2022/12/26/fb.png" alt="Изображение" />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p class="fut">Blanchard © 2020 / Все права защищены</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="futer-tb" align="center">
+              <p class="futer">Вы можете так же
+                <a class="futer-link">отписаться от рассылки</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
